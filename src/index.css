@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-display: "Cinzel", "Cormorant Garamond", serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-urdu: "Amiri", "Noto Nastaliq Urdu", serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #242120;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.font-serif-wedding {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-display-wedding {
+  font-family: "Cinzel", "Cormorant Garamond", serif;
+}
+
+.font-urdu-calligraphy {
+  font-family: "Amiri", serif;
+}
+
+/* Subtle gold metallic shimmer on borders and foil text */
+.text-gold-foil {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5E6AB 50%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-foil {
+  border-color: #D4AF37;
+}
+
+/* Texture effect for luxury invitation cards */
+.paper-texture {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+  background-size: 24px 24px;
+}

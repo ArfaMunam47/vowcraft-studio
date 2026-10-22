@@ -1,0 +1,328 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { WeddingTemplate } from '../types/template';
+
+export const FOUNDATION_TEMPLATES: WeddingTemplate[] = [
+  {
+    id: 'barat-royal-burgundy',
+    title: 'Mughal Darbar Barat Suite',
+    tagline: 'Deep velvet crimson with 24k antique gold foil archway',
+    tradition: 'barat',
+    traditionLabel: 'Barat & Shaadi',
+    style: 'royal-heritage',
+    styleLabel: 'Royal Heritage',
+    palette: {
+      name: 'Royal Burgundy & Gold',
+      background: '#2B0E14',
+      cardBg: '#3B121B',
+      cardBorder: '#D4AF37',
+      primaryText: '#F7E7CE',
+      secondaryText: '#E6C994',
+      accentGold: '#D4AF37',
+      motifFill: 'rgba(212, 175, 55, 0.15)'
+    },
+    sampleData: {
+      bismillahUrdu: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
+      headerKicker: 'In the name of Allah, the Most Beneficent, the Most Merciful',
+      parentsKicker: 'Mr. & Mrs. Tariq Mahmood request the honour of your presence at the Barat of their beloved son',
+      couplePrimary: 'Hamza Tariq',
+      coupleSecondary: 'Ayesha Farooq',
+      eventTitle: 'Grand Barat & Reception',
+      eventDateFormatted: 'Friday, 18th December 2026',
+      eventTime: '7:30 PM onwards',
+      venueName: 'The Pearl Continental Grand Ballroom',
+      cityCountry: 'Lahore, Pakistan',
+      rsvpNote: 'Warm regards from the Mahmood Family'
+    },
+    ornamentType: 'mughal-arch',
+    description: 'A stately design inspired by imperial Mughal court architecture, featuring a cusped royal arch, gilded floral tracery, and warm candlelight tones.',
+    designNotes: 'Engineered for grand wedding banquets. Supports formal bilingual title hierarchy and traditional parental blessings.',
+    culturalOrigin: 'South Asian · Classical Barat',
+    tags: ['Barat', 'Royal', 'Burgundy', 'Gold Foil', 'Mughal Arch', 'Formal'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'walima-champagne-ivory',
+    title: 'Noor Ivory & Champagne Walima',
+    tagline: 'Serene warm alabaster with delicate debossed gold foil florals',
+    tradition: 'walima',
+    traditionLabel: 'Walima & Reception',
+    style: 'minimal-modern',
+    styleLabel: 'Understated Elegance',
+    palette: {
+      name: 'Champagne & Warm Ivory',
+      background: '#F4EFE6',
+      cardBg: '#FAF7F2',
+      cardBorder: '#C5A059',
+      primaryText: '#2C2623',
+      secondaryText: '#7A6E65',
+      accentGold: '#C5A059',
+      motifFill: 'rgba(197, 160, 89, 0.12)'
+    },
+    sampleData: {
+      bismillahUrdu: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
+      headerKicker: 'Together with their families',
+      parentsKicker: 'Cordially invite you to celebrate the Walima reception of',
+      couplePrimary: 'Zayd Al-Mansoor',
+      coupleSecondary: 'Mariam Siddiqui',
+      eventTitle: 'Walima Celebration',
+      eventDateFormatted: 'Sunday, 20th December 2026',
+      eventTime: '8:00 PM',
+      venueName: 'Serena Marquee Gardens',
+      cityCountry: 'Islamabad, Pakistan',
+      rsvpNote: 'RSVP: Siddiqui & Mansoor Families'
+    },
+    ornamentType: 'minimalist-trim',
+    description: 'Clean, serene, and exquisitely balanced. Warm natural cotton paper textures paired with debossed hairline borders and modern editorial serif typography.',
+    designNotes: 'Ideal for sophisticated receptions and daytime garden celebrations where restraint and subtle luxury take center stage.',
+    culturalOrigin: 'Contemporary South Asian · Walima',
+    tags: ['Walima', 'Ivory', 'Champagne', 'Minimal', 'Editorial', 'Sophisticated'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'mehndi-marigold-saffron',
+    title: 'Jashn-e-Bahaar Mehndi & Mayun',
+    tagline: 'Joyous saffron yellow, rich emerald, and festive marigold garlands',
+    tradition: 'mehndi',
+    traditionLabel: 'Mehndi & Sangeet',
+    style: 'festive-vibrant',
+    styleLabel: 'Festive Vibrant',
+    palette: {
+      name: 'Saffron Marigold & Teal',
+      background: '#2B4736',
+      cardBg: '#1B3526',
+      cardBorder: '#E6A817',
+      primaryText: '#FFF6E0',
+      secondaryText: '#E2C275',
+      accentGold: '#F3B72C',
+      motifFill: 'rgba(243, 183, 44, 0.18)'
+    },
+    sampleData: {
+      headerKicker: 'Join us for an evening of music, henna & joy',
+      parentsKicker: 'The Khan and Malik families invite you to celebrate',
+      couplePrimary: 'Sana Khan',
+      coupleSecondary: 'Bilal Malik',
+      eventTitle: 'Sangeet & Mehndi Night',
+      eventDateFormatted: 'Wednesday, 16th December 2026',
+      eventTime: '6:30 PM',
+      venueName: 'Royal Palm Golf & Country Club',
+      cityCountry: 'Lahore, Pakistan',
+      rsvpNote: 'Dholki songs, dance performances & dinner'
+    },
+    ornamentType: 'floral-botanical',
+    description: 'Radiant, celebratory, and full of musical energy. Botanical floral garlands framing festive typography with warm amber illumination.',
+    designNotes: 'Crafted specifically for lively Sangeet and Mehndi events, with room for dress codes (yellow/green attire) and performance timelines.',
+    culturalOrigin: 'South Asian · Sangeet & Henna',
+    tags: ['Mehndi', 'Sangeet', 'Emerald', 'Saffron', 'Marigold', 'Floral'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'nikkah-sacred-emerald',
+    title: 'Aqd-e-Nikkah Emerald Arch',
+    tagline: 'Sacred deep emerald green with gilded geometric jaali motifs',
+    tradition: 'nikkah',
+    traditionLabel: 'Nikkah & Ceremony',
+    style: 'ornamental-arch',
+    styleLabel: 'Sacred Ornamental',
+    palette: {
+      name: 'Sacred Emerald & Polished Brass',
+      background: '#0B231A',
+      cardBg: '#133527',
+      cardBorder: '#D8B155',
+      primaryText: '#FBF7EE',
+      secondaryText: '#D1BE93',
+      accentGold: '#D8B155',
+      motifFill: 'rgba(216, 177, 85, 0.15)'
+    },
+    sampleData: {
+      bismillahUrdu: 'وَخَلَقْنَاكُمْ أَزْوَاجًا',
+      headerKicker: '"And We created you in pairs" — Surah An-Naba',
+      parentsKicker: 'With the blessings of Almighty Allah, we invite you to witness the Nikkah of',
+      couplePrimary: 'Ibrahim Qureshi',
+      coupleSecondary: 'Hiba Nadeem',
+      eventTitle: 'Solemnization of Aqd-e-Nikkah',
+      eventDateFormatted: 'Thursday, 17th December 2026',
+      eventTime: 'After Asr Prayer (4:30 PM)',
+      venueName: 'Faisal Mosque Courtyard Marquee',
+      cityCountry: 'Islamabad, Pakistan',
+      rsvpNote: 'Dua & Hi-Tea reception to follow'
+    },
+    ornamentType: 'geometric-jaali',
+    description: 'Devout and tranquil. Centered around sacred Quranic calligraphy with intricate geometric lattice jaali borders inspired by Islamic sanctuary architecture.',
+    designNotes: 'Prioritizes solemnity, Quranic verses, and intimate ceremony timelines for mosque or home-based sacred vows.',
+    culturalOrigin: 'Islamic & South Asian · Sacred Nikkah',
+    tags: ['Nikkah', 'Sacred', 'Emerald', 'Gold Jaali', 'Calligraphy', 'Islamic Verse'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'contemporary-minimalist-serif',
+    title: 'Atelier Contemporary Minimal',
+    tagline: 'Editorial bilingual typography on warm sandstone with crisp hairline borders',
+    tradition: 'contemporary',
+    traditionLabel: 'Contemporary Minimal',
+    style: 'minimal-modern',
+    styleLabel: 'Modern Editorial',
+    palette: {
+      name: 'Sandstone & Charcoal',
+      background: '#EAE5DC',
+      cardBg: '#F5F2EB',
+      cardBorder: '#8A7D70',
+      primaryText: '#1F1C1A',
+      secondaryText: '#615852',
+      accentGold: '#997D5E',
+      motifFill: 'rgba(153, 125, 94, 0.08)'
+    },
+    sampleData: {
+      headerKicker: 'Two souls, one shared path',
+      parentsKicker: 'Invite you to celebrate their union and new beginnings',
+      couplePrimary: 'Zainab Merchant',
+      coupleSecondary: 'Arman Varma',
+      eventTitle: 'Wedding Celebration & Dinner',
+      eventDateFormatted: 'Saturday, 9th January 2027',
+      eventTime: '6:00 PM',
+      venueName: 'The Glasshouse at Pavilion Grounds',
+      cityCountry: 'Karachi, Pakistan',
+      rsvpNote: 'Cocktail attire & heartfelt conversations'
+    },
+    ornamentType: 'minimalist-trim',
+    description: 'Minimalist editorial composition favoring spacious typographic margins, deliberate letter-spacing, and an understated aesthetic for modern couples.',
+    designNotes: 'Versatile across intercultural, fusion, and civil wedding ceremonies where timeless simplicity speaks loudest.',
+    culturalOrigin: 'Global Contemporary & Fusion',
+    tags: ['Contemporary', 'Minimalist', 'Editorial', 'Clean Serif', 'Sandstone', 'Modern'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'sangeet-royal-magenta',
+    title: 'Noor-e-Dholak Sangeet Celebration',
+    tagline: 'Deep royal plum and magenta with golden paisley filigree',
+    tradition: 'mehndi',
+    traditionLabel: 'Mehndi & Sangeet',
+    style: 'festive-vibrant',
+    styleLabel: 'Festive Vibrant',
+    palette: {
+      name: 'Plum Wine & Sunset Gold',
+      background: '#351124',
+      cardBg: '#481732',
+      cardBorder: '#E5B84B',
+      primaryText: '#FFF5F0',
+      secondaryText: '#ECCCA6',
+      accentGold: '#E5B84B',
+      motifFill: 'rgba(229, 184, 75, 0.16)'
+    },
+    sampleData: {
+      headerKicker: 'A night of rhythm, laughter & eternal blessings',
+      parentsKicker: 'With joy in our hearts, we invite you to',
+      couplePrimary: 'Alizeh Shah',
+      coupleSecondary: 'Raza Jafri',
+      eventTitle: 'Musical Sangeet & Henna Night',
+      eventDateFormatted: 'Tuesday, 22nd December 2026',
+      eventTime: '7:00 PM',
+      venueName: 'Mughal Marquee at Heritage Hills',
+      cityCountry: 'Rawalpindi, Pakistan',
+      rsvpNote: 'Followed by traditional Kashmiri Chai & delicacies'
+    },
+    ornamentType: 'paisley-mandala',
+    description: 'Rich, melodic plum jewel tones accented by delicate golden paisley curves, designed for lively family music nights and energetic festivities.',
+    designNotes: 'Engineered for evening celebratory events with room for dance performance schedules and family musical programs.',
+    culturalOrigin: 'South Asian · Sangeet Tradition',
+    tags: ['Sangeet', 'Plum', 'Magenta', 'Paisley', 'Festive', 'Dholak'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'botanical-blush-garden',
+    title: 'Gulshan Rose Botanical Suite',
+    tagline: 'Dusty rose and sage leaves with warm gold lettering',
+    tradition: 'walima',
+    traditionLabel: 'Walima & Reception',
+    style: 'floral-botanical',
+    styleLabel: 'Botanical Floral',
+    palette: {
+      name: 'Dusty Rose & Sage Gold',
+      background: '#EAE1D9',
+      cardBg: '#FAF5F1',
+      cardBorder: '#BE9B7B',
+      primaryText: '#322521',
+      secondaryText: '#79655E',
+      accentGold: '#C49767',
+      motifFill: 'rgba(196, 151, 103, 0.12)'
+    },
+    sampleData: {
+      bismillahUrdu: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
+      headerKicker: 'Love bloomed in grace',
+      parentsKicker: 'Together with their families, joyfully invite you to the wedding reception of',
+      couplePrimary: 'Fatima Zahra',
+      coupleSecondary: 'Daniyal Qureshi',
+      eventTitle: 'Garden Walima Reception',
+      eventDateFormatted: 'Sunday, 3rd January 2027',
+      eventTime: '1:00 PM',
+      venueName: 'The Botanical Pavilions',
+      cityCountry: 'Lahore, Pakistan',
+      rsvpNote: 'Afternoon feast in the courtyard'
+    },
+    ornamentType: 'floral-botanical',
+    description: 'Gentle, romantic botanical branches embracing soft rose and parchment tones. Evokes sunlit afternoon wedding garden feasts.',
+    designNotes: 'Favored for daytime winter receptions and spring floral weddings with pastel bridal attire.',
+    culturalOrigin: 'Garden Ceremony & Daytime Walima',
+    tags: ['Walima', 'Garden', 'Botanical', 'Dusty Rose', 'Floral', 'Romantic'],
+    status: 'foundation_preview'
+  },
+  {
+    id: 'mughal-nocturne-midnight',
+    title: 'Sheesh Mahal Nocturne Barat',
+    tagline: 'Midnight lapis lazuli navy with shimmering golden filigree',
+    tradition: 'barat',
+    traditionLabel: 'Barat & Shaadi',
+    style: 'ornamental-arch',
+    styleLabel: 'Royal Heritage',
+    palette: {
+      name: 'Midnight Lapis & Royal Gold',
+      background: '#0B1424',
+      cardBg: '#111E33',
+      cardBorder: '#D6AE54',
+      primaryText: '#F7F4EE',
+      secondaryText: '#D6C8A6',
+      accentGold: '#D6AE54',
+      motifFill: 'rgba(214, 174, 84, 0.14)'
+    },
+    sampleData: {
+      bismillahUrdu: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
+      headerKicker: 'Honouring heritage, celebrating unity',
+      parentsKicker: 'Request the pleasure of your company to celebrate the marriage of',
+      couplePrimary: 'Omer Hashmi',
+      coupleSecondary: 'Sarah Al-Ghamdi',
+      eventTitle: 'Imperial Barat Banquet',
+      eventDateFormatted: 'Friday, 15th January 2027',
+      eventTime: '8:00 PM',
+      venueName: 'The Sheesh Mahal Hall',
+      cityCountry: 'Karachi, Pakistan',
+      rsvpNote: 'Formal reception dinner'
+    },
+    ornamentType: 'mughal-arch',
+    description: 'Inspired by Lahore Fort Sheesh Mahal mirror work and starry night skies, combining deep lapis blue depth with brilliant gold architectural tracery.',
+    designNotes: 'Provides an alternative to red/burgundy while retaining regal imperial grandeur for formal evening banquets.',
+    culturalOrigin: 'South Asian & Middle Eastern Heritage',
+    tags: ['Barat', 'Midnight Navy', 'Lapis', 'Imperial', 'Mughal', 'Gold Tracery'],
+    status: 'foundation_preview'
+  }
+];
+
+export const EVENT_TRADITION_TABS = [
+  { id: 'all', label: 'All Traditions' },
+  { id: 'barat', label: 'Barat & Shaadi' },
+  { id: 'mehndi', label: 'Mehndi & Sangeet' },
+  { id: 'walima', label: 'Walima & Reception' },
+  { id: 'nikkah', label: 'Nikkah & Ceremony' },
+  { id: 'contemporary', label: 'Contemporary Minimal' },
+] as const;
+
+export const VISUAL_STYLE_OPTIONS = [
+  { id: 'all', label: 'All Aesthetics' },
+  { id: 'royal-heritage', label: 'Royal Heritage' },
+  { id: 'ornamental-arch', label: 'Ornamental Arch' },
+  { id: 'floral-botanical', label: 'Floral & Botanical' },
+  { id: 'minimal-modern', label: 'Modern & Editorial' },
+  { id: 'festive-vibrant', label: 'Festive Vibrant' },
+] as const;
